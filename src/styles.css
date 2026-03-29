@@ -7,7 +7,7 @@
   --text: #f0ede8;
   --muted: rgba(240,237,232,0.45);
   --accent: #2CF2D4;
-  --accent-dim: rgba(90, 245, 217, 0.12);
+  --accent-dim: rgba(90, 245, 217, 0.68);
 }
 
 html { scroll-behavior: smooth; }
@@ -24,5 +24,44 @@ body {
   cursor: none;
 }
 ::selection {
+  background: var(--accent-dim);
+}
+@keyframes fade-up {
+  to { opacity: 1; transform: translateY(0); }
+}
+.reveal {
+  opacity: 0; transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.visible {
+  opacity: 1; transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+  nav { padding: 20px 28px; }
+  nav ul { display: none; }
+  .hero { padding: 0 28px 60px; }
+  section { padding: 80px 28px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .process-steps { grid-template-columns: 1fr 1fr; }
+  #ueber { grid-template-columns: 1fr; padding: 80px 28px; }
+  .about-visual { display: none; }
+  footer { flex-direction: column; gap: 16px; text-align: center; padding: 24px 28px; }
+  .contact-details { gap: 32px; }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--border);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+}
+
+::-webkit-scrollbar-thumb:hover {
   background: var(--accent-dim);
 }
