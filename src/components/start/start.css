@@ -1,0 +1,98 @@
+.hero {
+  min-height: 100vh;
+  display: flex; flex-direction: column;
+  justify-content: flex-start;
+  padding: 130px 60px 80px;
+  position: relative;
+  overflow: hidden;
+}
+.hero-marked {
+  color: var(--accent);
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 60% 60% at 70% 30%, rgba(90, 245, 204, 0.07) 0%, transparent 70%);
+  animation: pulse-bg 8s ease-in-out infinite alternate;
+}
+@keyframes pulse-bg {
+  from { opacity: 0.5; transform: scale(1); }
+  to { opacity: 1; transform: scale(1.08); }
+}
+.hero-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 32px;
+  opacity: 1;
+  transform: translateY(16px);
+  animation: fade-up 0.8s 0.3s forwards;
+}
+.hero h1 {
+  font-family: -apple-system, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+  max-width: 900px;
+  opacity: 1;
+  transform: translateY(30px);
+  animation: fade-up 1s 0.5s forwards;
+}
+.hero h1 em {
+  font-style: italic;
+  color: var(--muted);
+}
+.hero-sub {
+  margin-top: 48px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  opacity: 1;
+  transform: translateY(20px);
+  animation: fade-up 0.8s 0.9s forwards;
+}
+.hero-sub p {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 340px;
+}
+.hero-scroll {
+  display: flex; align-items: center; gap: 12px;
+  color: var(--muted); font-size: 0.78rem;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  white-space: nowrap;
+}
+.scroll-line {
+  width: 60px; height: 1px;
+  background: var(--muted);
+  position: relative; overflow: hidden;
+}
+.scroll-line::after {
+  content: '';
+  position: absolute; top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: var(--accent);
+  animation: scroll-anim 2s 1.5s infinite;
+}
+@keyframes scroll-anim {
+  0% { left: -100%; }
+  50% { left: 0; }
+  100% { left: 100%; }
+}
+section { padding: 120px 60px; }
+
+.section-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+.section-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(2.2rem, 4vw, 3.8rem);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  margin-bottom: 60px;
+}
