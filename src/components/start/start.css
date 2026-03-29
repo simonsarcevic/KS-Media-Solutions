@@ -80,19 +80,3 @@
   50% { left: 0; }
   100% { left: 100%; }
 }
-section { padding: 120px 60px; }
-
-.section-label {
-  font-size: 0.72rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 20px;
-}
-.section-title {
-  font-family: 'DM Serif Display', serif;
-  font-size: clamp(2.2rem, 4vw, 3.8rem);
-  line-height: 1.1;
-  letter-spacing: -0.015em;
-  margin-bottom: 60px;
-}

@@ -23,3 +23,6 @@ body {
   overflow-x: hidden;
   cursor: none;
 }
+::selection {
+  background: var(--accent-dim);
+}
