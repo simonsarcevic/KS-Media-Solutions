@@ -80,3 +80,15 @@
   50% { left: 0; }
   100% { left: 100%; }
 }
+@media (max-width: 900px) {
+  nav { padding: 20px 28px; }
+  nav ul { display: none; }
+  .hero { padding: 80px 28px 60px; }
+  section { padding: 80px 28px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .process-steps { grid-template-columns: 1fr 1fr; }
+  #ueber { grid-template-columns: 1fr; padding: 80px 28px; }
+  .about-visual { display: none; }
+  footer { flex-direction: column; gap: 16px; text-align: center; padding: 24px 28px; }
+  .contact-details { gap: 32px; }
+}

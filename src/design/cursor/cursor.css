@@ -25,3 +25,7 @@ body:has(button:hover) .cursor-ring {
   width: 60px; height: 60px;
   border-color: var(--accent);
 }
+@media (max-width: 900px) {
+  .cursor-ring {display: none;}
+  .cursor {display: none;}
+}
