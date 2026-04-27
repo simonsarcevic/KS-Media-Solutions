@@ -39,7 +39,7 @@
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 8px;
+  margin-bottom: 22px;
 }
 .contact-item a, .contact-item p {
   color: var(--muted);
