@@ -3,6 +3,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  margin-top: 20px;
 }
 .contact-bg {
   position: absolute; inset: 0;
@@ -46,5 +47,6 @@
   text-decoration: none;
   font-size: 0.95rem;
   transition: color 0.25s;
+  margin-bottom: 20px;
 }
 .contact-item a:hover { color: var(--text); }
