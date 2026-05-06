@@ -55,3 +55,8 @@ nav ul a:hover { color: var(--text); }
   footer { flex-direction: column; gap: 16px; text-align: center; padding: 24px 28px; }
   .contact-details { gap: 32px; }
 }
+.site-logo img {
+  height: 75px;
+  width: auto;
+  display: block;
+}
