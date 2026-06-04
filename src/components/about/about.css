@@ -17,10 +17,9 @@
   border-bottom: 1px solid var(--border);
   transition: border-color 0.3s, gap 0.3s;
   margin-bottom: 30px;
+  border-color: var(--accent); gap: 18px;
 }
 
-
-.about-cta:hover { border-color: var(--accent); gap: 18px; }
 @media (max-width: 900px) {
   nav { padding: 20px 28px; }
   nav ul { display: none; }

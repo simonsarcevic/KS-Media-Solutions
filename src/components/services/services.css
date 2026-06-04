@@ -92,4 +92,5 @@ section { padding: 120px 60px; }
   .about-visual { display: none; }
   footer { flex-direction: column; gap: 16px; text-align: center; padding: 24px 28px; }
   .contact-details { gap: 32px; }
+  .section-label {font-size: 15px;}
 }
