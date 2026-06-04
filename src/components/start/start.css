@@ -1,5 +1,5 @@
 .hero {
-  min-height: 100vh;
+  min-height: 85vh;
   display: flex; flex-direction: column;
   justify-content: flex-start;
   padding: 130px 60px 80px;
@@ -83,7 +83,7 @@
 @media (max-width: 900px) {
   nav { padding: 20px 28px; }
   nav ul { display: none; }
-  .hero { padding: 80px 28px 60px; }
+  .hero { padding: 80px 28px; margin-top: 40px;}
   section { padding: 80px 28px; }
   .services-grid { grid-template-columns: 1fr; }
   .process-steps { grid-template-columns: 1fr 1fr; }
@@ -91,4 +91,10 @@
   .about-visual { display: none; }
   footer { flex-direction: column; gap: 16px; text-align: center; padding: 24px 28px; }
   .contact-details { gap: 32px; }
+  .hero-sub {flex-direction: column;}
+  .hero-sub p {font-size: 20px}
+  .hero-scroll {font-size: 20px}
+  .scroll-line {width: 130px}
+  .hero h1 {font-size: 40px}
+  .hero-label {font-size: 15px; margin-top: 5px}
 }
